@@ -10,7 +10,7 @@ use rig_surrealdb::{Mem, SurrealVectorStore};
 use serde::Serialize;
 use surrealdb::Surreal;
 
-#[derive(Embed, Serialize, Default)]
+#[derive(Embed, Serialize)]
 struct WordDefinition {
     word: String,
     #[embed]
