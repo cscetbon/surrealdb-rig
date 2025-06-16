@@ -1,0 +1,12 @@
+[package]
+name = "surrealdb-rig"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+rig-core = { version = "0.13.0", features = ["derive"] }
+rig-surrealdb = "0.1.5"
+serde = "1.0.219"
+surrealdb = "2.3.3"
+tokio = "1.45.1"
