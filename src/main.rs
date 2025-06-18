@@ -51,6 +51,12 @@ async fn main() -> Result<()> {
             word: "zorp".to_string(),
             definition: "A term used to describe an alien greeting.".to_string(),
         },
+        WordDefinition {
+            word: "gorg".to_string(),
+            definition:
+                "A family of giants in the series Fraggle Rock that live in a rundown castle."
+                    .to_string(),
+        },
     ];
 
     let documents = EmbeddingsBuilder::new(model)
@@ -71,6 +77,7 @@ async fn main() -> Result<()> {
         "What is a zorp?",
         "What's the word that corresponds to a small unit of currency?",
         "What is a gloubi-boulga?",
+        "What sort of castle do giants live in?",
     ];
 
     for prompt in prompts {
